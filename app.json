@@ -1,0 +1,6 @@
+{
+  "name": "OpenNode streaming Lapp template for Heroku",
+  "description": "Pollofeed-style Lapp with streaming video and payments via Lightning Network",
+  "repository": "https://github.com/katokishin/heroku-streaming-lapp",
+  "keywords": ["lightning", "bitcoin", "lapp", "streaming"]
+}
