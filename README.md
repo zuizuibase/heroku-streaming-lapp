@@ -24,3 +24,11 @@ The following are optional:
 Even more optional are the following (you will likely not need these settings):
 
 `PORT` - Sets the port for the app to listen on. Defaults to 3000
+
+## Customization
+
+You can edit the `views/index.ejs` file to improve the design of the page.
+
+You can set `CALLBACK_URL` and have OpenNode send a POST request to a different server, your home network, etc. and trigger some event that is shown in the video.
+
+You can fork this repository and add whatever features & checks you would like!
