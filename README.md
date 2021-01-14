@@ -9,6 +9,7 @@ Deploying to Heroku is easy. Press the button above to get started.
 
 You will need to set the following environmental variables for your Heroku app. Once deployed, click "Manage App" and in the Settings tab, edit Config Vars:
 
+`HEROKU_URL` - This is the URL of the top page of the app, without the trailing slash. Examle: `https://test-lapp.herokuapp.com`
 `LAPP_NAME` - This gets displayed on the page, in the title, and on invoices. Example: `Test app`
 `MIN_PAYMENT` - This is the price of one invoice, in sats or the currency specified below.
 `OPENNODE_API_KEY` - This is your [OpenNode](https://opennode.com/) API key.
