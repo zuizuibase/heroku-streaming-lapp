@@ -7,9 +7,8 @@ const opennodeController = require('../controllers/opennode')
 router.get('/', async (req, res, next) => {
   try {
     amount = process.env.MIN_PAYMENT
-    success_url = typeof process.env.HEROKU_URL !== 'undefined' ? process.env.HEROKU_URL : `localhost:${PORT || 3000}`
     if (req.body.amount < process.env.MIN_PAYMENT) return res.status(500)
-    const charge = await opennodeController.createCharge({ amount, success_url })
+    const charge = await opennodeController.createCharge({ amount })
     return res.redirect(`https://checkout.opennode.com/${charge.id}`)
   } catch (err) {
     console.error(err)
