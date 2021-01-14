@@ -4,23 +4,23 @@ require('dotenv').config()
 opennode.setCredentials(process.env.OPENNODE_API_KEY)
 
 // Creates an invoice on OpenNode
-const createCharge = async ({ amount, success_url }) => {
+const createCharge = async ({ amount }) => {
   try {
-    if (process.env.CURRENCY !== 'undefined') {
+    if (typeof process.env.CURRENCY !== 'undefined') {
       const charge = await opennode.createCharge({
         description: `${process.env.LAPP_NAME}: Charge ${amount} sats`,
         amount: parseInt(amount),
         currency: process.env.CURRENCY,
-        callback_url: process.env.CALLBACK_URL !== 'undefined' ? process.env.CALLBACK_URL : `${process.env.HEROKU_URL}/pay/callback`,
-        success_url: process.env.SUCCESS_URL !== 'undefined' ? process.env.SUCCESS_URL : `${process.env.HEROKU_URL}`
+        callback_url: typeof process.env.CALLBACK_URL !== 'undefined' ? process.env.CALLBACK_URL : `${process.env.HEROKU_URL}/pay/callback`,
+        success_url: typeof process.env.HEROKU_URL !== 'undefined' ? process.env.HEROKU_URL : ''
       })
       return charge
     } else {
       const charge = await opennode.createCharge({
         description: `${process.env.LAPP_NAME}: Charge ${amount} sats`,
         amount: parseInt(amount),
-        callback_url: process.env.CALLBACK_URL !== 'undefined' ? process.env.CALLBACK_URL : `${process.env.HEROKU_URL}/pay/callback`,
-        success_url: process.env.SUCCESS_URL !== 'undefined' ? process.env.SUCCESS_URL : `${process.env.HEROKU_URL}`
+        callback_url: typeof process.env.CALLBACK_URL !== 'undefined' ? process.env.CALLBACK_URL : `${process.env.HEROKU_URL}/pay/callback`,
+        success_url: typeof process.env.HEROKU_URL !== 'undefined' ? process.env.HEROKU_URL : ''
       })
       return charge
     }
