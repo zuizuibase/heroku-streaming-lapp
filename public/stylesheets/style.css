@@ -7,3 +7,9 @@ body {
 a {
   color: #00B7FF;
 }
+@media screen and (max-width:480px){
+  /*画面幅が480pxまでなら、文字を青色にする*/
+  p {
+    color: blue;
+  }
+}
