@@ -10,6 +10,7 @@ a {
 @media screen and (max-width:480px){
   /*画面幅が480pxまでなら、文字を青色にする*/
   p {
-    color: blue;
+    background-color: #005366;
+     font: 30px "Lucida Grande", Helvetica, Arial, sans-serif;
   }
 }
