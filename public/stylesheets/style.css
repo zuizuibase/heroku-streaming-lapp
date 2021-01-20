@@ -1,3 +1,8 @@
+@media screen and (max-width: 480px){
+  background-color: #004446;
+  padding: 50px;
+  font: 30px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
 body {
   background-color: #003366;
   padding: 50px;
@@ -6,11 +11,4 @@ body {
 
 a {
   color: #00B7FF;
-}
-@media screen and (max-width:480px){
-  /*画面幅が480pxまでなら、文字を青色にする*/
-  p {
-    background-color: #005366;
-     font: 30px "Lucida Grande", Helvetica, Arial, sans-serif;
-  }
 }
