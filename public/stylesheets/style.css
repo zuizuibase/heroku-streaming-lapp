@@ -1,11 +1,11 @@
 body {
-  background-color: #005366;
+  background-color: #808000;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 @media screen and (min-width: 414px){
   body {
-  background-color: #808000;
+  background-color: #005366;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
