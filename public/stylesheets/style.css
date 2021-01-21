@@ -3,10 +3,10 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-@media screen and (max-width: 1030px){
+@media screen and (max-width: 480px){
   body {
-  background-color: #006666;
-  padding: 50px;
+  background-color: #808000;
+  padding: 10px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 }
@@ -17,10 +17,10 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 1030px){
   body {
-  background-color: #808000;
-  padding: 10px;
+  background-color: #006666;
+  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 }
