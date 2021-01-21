@@ -17,7 +17,7 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 }
-@media screen and (max-width:480px){
+@media screen and (max-width: 480px){
   body {
   background-color: #808000;
   padding: 50px;
