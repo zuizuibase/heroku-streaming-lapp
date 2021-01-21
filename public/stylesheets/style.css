@@ -5,14 +5,14 @@ body {
 }
 @media screen and (max-width: 1030px){
   body {
-  background-color: #006666;
+  background-color: #005366;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 }
 @media screen and (max-width: 768px){
   body {
-  background-color: #003366;
+  background-color: #005366;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
