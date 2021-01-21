@@ -3,6 +3,13 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
+@media screen and (min-width: 481px){
+  body {
+  background-color: #808000;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+}
 a {
   color: #00B7FF;
 }
