@@ -20,7 +20,7 @@ body {
 @media screen and (max-width: 480px){
   body {
   background-color: #808000;
-  padding: 50px;
+  padding: 10px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 }
